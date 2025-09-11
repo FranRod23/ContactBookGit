@@ -2,6 +2,7 @@ package contactBook;
 
 import contactBook.Contact;
 //test
+//agora ja é o outro o local? teste
 public class ContactBook {
     static final int DEFAULT_SIZE = 100;
 
