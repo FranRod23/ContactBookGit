@@ -1,8 +1,7 @@
 package contactBook;
 
 import contactBook.Contact;
-//test
-//another another test -miguel
+
 public class ContactBook {
     static final int DEFAULT_SIZE = 100;
 
