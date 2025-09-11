@@ -150,6 +150,6 @@ public class Main {
     }
 
     private static void hasSamePhones(ContactBook cBook) {
-        cBook.hasSamePhones() ? System.out.println(REP_CONTACTS) : System.out.println(NO_REP_CONTACTS);
-    }
+        if (cBook.hasSamePhones()) System.out.println(REP_CONTACTS);
+        else System.out.println(NO_REP_CONTACTS);}
 }
