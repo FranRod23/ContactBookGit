@@ -20,6 +20,10 @@ public class ContactBook {
         return searchIndex(name) >= 0;
     }
 
+    public boolean hasPhone(int number) {
+        return true;
+    }
+
     public int getNumberOfContacts() {
         return counter;
     }
@@ -30,6 +34,9 @@ public class ContactBook {
             resize();
         contacts[counter] = new Contact(name, phone, email);
         counter++;
+    }
+    public String getName(int phone){
+        return "encontrado";
     }
 
     //Pre: name != null && hasContact(name)
