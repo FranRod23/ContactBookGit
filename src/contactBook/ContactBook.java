@@ -23,9 +23,10 @@ public class ContactBook {
     public boolean hasPhone(int number) {
         boolean exist = false;
         int i = 0;
-        while (!exist && i <= contacts.length) {
-            if (contacts[i].getPhone() == number )
+        while (!exist && i < contacts.length) {
+            if (contacts[i] != null && contacts[i].getPhone() == number) {
                 exist = true;
+            }
             i++;
         }
         return exist;
