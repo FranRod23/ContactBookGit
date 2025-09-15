@@ -77,7 +77,6 @@ public class Main {
         input = in.nextLine().toUpperCase();
         return input;
     }
-
     private static void addContact(Scanner in, ContactBook cBook) {
         String name, email;
         int phone;

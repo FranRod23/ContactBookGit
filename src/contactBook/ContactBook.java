@@ -31,7 +31,6 @@ public class ContactBook {
         }
         return exist;
     }
-
     // ...
     public int getNumberOfContacts() {
         return counter;
