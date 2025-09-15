@@ -30,6 +30,7 @@ public class Main {
     public static final String NO_REP_CONTACTS = "All contacts have different phone numbers.";
     public static final String PHONE_NOT_EXIST = "Phone number does not exist.";
 
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         ContactBook cBook = new ContactBook();
