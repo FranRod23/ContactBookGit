@@ -21,7 +21,14 @@ public class ContactBook {
     }
 
     public boolean hasPhone(int number) {
-        return true;
+        boolean exist = false;
+        int i = 0;
+        while (!exist && i <= contacts.length) {
+            if (contacts[i].getPhone() == number )
+                exist = true;
+            i++;
+        }
+        return exist;
     }
 
     public int getNumberOfContacts() {
@@ -36,7 +43,16 @@ public class ContactBook {
         counter++;
     }
     public String getName(int phone){
-        return "encontrado";
+        int i = 0;
+        boolean found = false;
+        while (!found && i <= contacts.length){
+            if (contacts[i].getPhone() == phone) {
+                found = true;
+            }
+            else
+                i++;
+        }
+        return contacts[i].getName();
     }
 
     //Pre: name != null && hasContact(name)
